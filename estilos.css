@@ -1,0 +1,118 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+body{
+    width: auto;
+    height: auto;
+    padding: 20px;
+}
+header{
+    margin-top: 20px;
+    text-align: center;
+    padding: 20px;
+}
+
+main{
+    max-width: 1000px;
+    border-radius: 20px;
+    background-color:#eee;
+    position: relative;
+    margin: auto;
+    text-align:center;}
+
+main figure img{
+    width: 100%;
+    border-radius: 20px;
+    position:relative;
+}
+span{text-align: center;}
+
+div{
+    position: absolute;
+    height: 2rem;
+    width: 2rem;
+    border-radius: .5rem;
+    color: #000;
+    }
+
+
+div:nth-child(1){
+    left: 20%;
+    top: calc(80% - 1rem);
+    }
+
+/*landscape*/
+@media screen and (orientation: landscape){
+div:nth-child(1){
+    left: 10%;
+    top: calc(40% - 1rem);
+    }
+
+    
+div:nth-child(2){
+    left: calc(45% - 1rem);
+    top: 10rem;
+   
+}
+div:nth-child(3){
+    left: calc(77% - 1.5rem);
+    bottom: calc(75% - 1rem);
+    top: 23rem;}
+}
+div:nth-child(4){
+    right: calc(70% - 3.5rem);
+    top: 23rem;
+    bottom: calc(75% - 1rem)}
+
+div:nth-child(5){
+    left: calc(77% - 1.5rem);
+    bottom: calc(75% - 1rem);
+    }
+    
+
+div{
+    right: calc(60% - 1rem);
+    bottom: calc(55% - 1rem);
+    position: absolute;
+    height: 2rem;
+    width: 2rem;
+    border-radius: .5rem;
+    color: #000;
+    }
+/*portrait*/
+@media screen and (orientation: portrait)
+{
+    div:nth-child(1){
+        left: 20%;
+        top: calc(80% - 1rem);
+    }
+
+div:nth-child(2){
+    left: calc(42% - 1.5rem);
+    top: .5rem;
+}
+div:nth-child(3){
+    left: calc(75% - 1.5rem);
+    bottom: calc(45% - 1rem);}
+}
+div:nth-child(4){
+    left: calc(10% - 1.5rem);
+    bottom: calc(45% - 1rem);
+}
+div:nth-child(5){
+    left: calc(40% - 1.5rem);
+    bottom: calc(40% - 10rem);}
+
+div{
+    left: calc(40% - 1.5rem);
+    bottom: calc(65% - 1rem);
+    position: absolute;
+    height: 2rem;
+    width: 2rem;
+    border-radius: .5rem;
+    color: #000;
+    }
+    
